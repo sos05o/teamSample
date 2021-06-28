@@ -79,8 +79,8 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'ringiSample',
-        'USER': 'root',
-        'PASSWORD': 'sinon1017',
+        'USER': 'djangoUser',
+        'PASSWORD': 'django',
         'HOST': 'localhost',
     }
 }
