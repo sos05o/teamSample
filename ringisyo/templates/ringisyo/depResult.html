@@ -1,0 +1,13 @@
+{% extends 'ringisyo/base.html' %}
+
+{% block title %}
+    <title>部署登録</title>
+{% endblock %}
+
+{% block body %}
+    <ul>
+    {% for dep in data %}
+        <li>{{ dep.name.as_li }}</li>
+    {% endfor %}
+    </ul>
+{% endblock %}

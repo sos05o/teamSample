@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang=ja>
+<head>
+    <meta charset="UTF-8">
+    {% block title %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'ringisyo/css/bootstrap.min.css'%}">
+
+    {% block exCss %}
+    {% endblock %}
+</head>
+<body>
+{% block body %}
+{% endblock %}
+私はbase.htmlです
+</body>
+<script src="{% static 'ringisyo/js/bootstrap.min.js' %}"></script>
+{% block exJava %}
+{% endblock %}
+</html>

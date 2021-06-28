@@ -1,0 +1,15 @@
+{% extends 'ringisyo/base.html' %}
+
+{% block title %}
+    formテンプレート
+{% endblock %}
+{% block body %}
+    <form action="{% url 'result' %}" method="post">
+    {% csrf_token %}
+        <label for="text">
+            <input type="text" name="text" placeholder="入力フォーム">
+            <input type="submit" value="送信">
+        </label>
+    </form>
+
+{% endblock %}

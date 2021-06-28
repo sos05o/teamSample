@@ -1,0 +1,16 @@
+{% extends 'ringisyo/base.html' %}
+
+{% block title %}
+    formリザルトテンプレート
+{% endblock %}
+{% block body %}
+    {% if text %}
+        <br>
+        <div style="color: red;">
+            {{ text }}
+        </div>
+        <br>
+    {% elif number %}
+    {{ number }}
+    {% endif %}
+{% endblock %}
